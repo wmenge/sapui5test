@@ -1,0 +1,15 @@
+<mvc:View
+	controllerName="Ui5Test.App"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<App>
+		<Page title="Wilco's Appje">
+			<Button
+				text="Steady..."
+				press=".onPress"
+				type="Emphasized"
+				class="sapUiSmallMargin"/>
+		</Page>
+	</App>
+</mvc:View>
