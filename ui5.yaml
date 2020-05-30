@@ -2,3 +2,6 @@ specVersion: '2.1'
 metadata:
   name: sapui5test
 type: application
+framework:
+  name: SAPUI5
+  version: "1.78.0"
