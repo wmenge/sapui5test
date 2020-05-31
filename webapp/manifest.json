@@ -2,6 +2,28 @@
 	"_version": "1.1.0",
 	"sap.app": {
 		"id": "nl.acorel.ui5demo",
-		"type": "application"
+		"type": "application",
+		"dataSources": {
+			"activitiesDataSource": {
+				"uri": "https://my308276.crm.ondemand.com/sap/c4c/odata/v1/c4codataapi/ActivityCollection",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0"
+				}
+			}
+		}
+	},
+	"sap.ui5": {
+		"rootView": {
+            "viewName": "Ui5Test.view.App",
+            "type": "XML",
+            "async": true,
+            "id": "app"
+         },
+		"models": {
+			"activiies": {
+				"dataSource": "activitiesDataSource"
+			}
+		}
 	}
 }
