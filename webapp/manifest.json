@@ -4,12 +4,9 @@
 		"id": "nl.acorel.ui5demo",
 		"type": "application",
 		"dataSources": {
-			"activitiesDataSource": {
-				"uri": "https://my308276.crm.ondemand.com/sap/c4c/odata/v1/c4codataapi/ActivityCollection",
-				"type": "OData",
-				"settings": {
-					"odataVersion": "2.0"
-				}
+			"c4cDataSource": {
+				"uri": "/sap/c4c/odata/v1/c4codataapi",
+				"type": "OData"
 			}
 		}
 	},
