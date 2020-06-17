@@ -1,7 +1,6 @@
 <mvc:View controllerName="Ui5Test.controller.App" displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns:smartTable="sap.ui.comp.smarttable" xmlns:tnt="sap.tnt">
 	<App id="app">
 		<Page title="Wilco's Appje">
-			<Button class="sapUiSmallMargin" icon="sap-icon://sap-ui5" press=".onPress" text="Go!" type="Emphasized"/>
 			<Table items="{c4c&gt;/ActivityCollection}">
 				<headerToolbar>
 					<OverflowToolbar>
@@ -25,34 +24,6 @@
 					</ColumnListItem>
 				</items>
 			</Table>
-		</Page>
-		<Page id="intro" title="Create Enterprise-Ready Web Apps with Ease">
-			<l:BlockLayout background="Light">
-				<l:BlockLayoutRow>
-					<l:BlockLayoutCell>
-						<core:Icon class="sapUiMediumMarginBottom" color="#1873B4" size="20rem" src="sap-icon://sap-ui5" width="100%"/>
-						<Title level="H1" text="This is UI5!" textAlign="Center" titleStyle="H1" width="100%"/>
-					</l:BlockLayoutCell>
-				</l:BlockLayoutRow>
-				<l:BlockLayoutRow>
-					<l:BlockLayoutCell>
-						<FlexBox class="sapUiSmallMarginBottom" items="{/features}" justifyContent="Center" wrap="Wrap">
-							<tnt:InfoLabel class="sapUiSmallMarginTop sapUiSmallMarginEnd" text="{}"/>
-						</FlexBox>
-					</l:BlockLayoutCell>
-				</l:BlockLayoutRow>
-				<l:BlockLayoutRow>
-					<l:BlockLayoutCell>
-						<Panel expandable="true" headerText="Are you ready?">
-							<Switch change=".onChange" customTextOff="no" customTextOn="yes"/>
-							<l:HorizontalLayout class="sapUiSmallMargin" id="ready" visible="false">
-								<Text class="sapUiTinyMarginEnd" text="Ok, let's get you started!"/>
-								<Link href="https://openui5.hana.ondemand.com/" text="Learn more"/>
-							</l:HorizontalLayout>
-						</Panel>
-					</l:BlockLayoutCell>
-				</l:BlockLayoutRow>
-			</l:BlockLayout>
 		</Page>
 	</App>
 </mvc:View>
